@@ -1,0 +1,88 @@
+/* Sidebar */
+/* main */
+.notion-sidebar-container {
+    background: #F8F8F8 !important;
+    border-right: 1px solid #F0F0F0;
+}
+
+/* note size link */ 
+.notion-sidebar-container > div > div > div > div:nth-child(4) > div,
+.notion-sidebar-container > div > div > div > div > div:nth-child(5) > div > div,
+.notion-sidebar-container .notion-selectable > a > div > div {
+    height: 40px;
+	border-bottom: 2px dotted #F2F2F2;
+}
+
+/* move arrow expand button to right */
+.notion-sidebar-container .notion-selectable > a > div > div > div:first-child > div {
+    margin-right: 16px;
+}
+
+/* increase click arrow button zone */
+.notion-sidebar-container .notion-selectable > a > div > div > div:first-child > div > div {
+    padding: 14px 0px 13px 20px !important;
+    width: 56px;
+}
+
+/* arrow button hover */
+.notion-sidebar-container .notion-selectable > a > div > div > div:first-child > div > div:hover {
+    background: #ccc;
+}
+
+/* remove extra button at right side */
+.notion-sidebar-container .notion-selectable > a > div > div > div:last-child > div > div {
+    display: none !important;
+}
+
+/* make larger arrow */
+.notion-sidebar-container .notion-selectable > a > div > div > div:first-child svg {
+    width: 13px !important;
+    height: 13px !important;
+    opacity: 0.35;
+}
+
+/* remove click event at note emoji icon */
+.notion-sidebar-container .notion-selectable > a > div > div > div:nth-child(2) {
+    opacity: 0 !important;
+    width: 4px !important;
+    pointer-events: none;
+}
+
+/* remove popup window when text selected */
+.notion-text-action-menu {
+	display: none !important;
+}
+
+/* NOTES */
+/* note link background (+hover) remove + fix size */
+.notion-page-content div.notion-selectable a > div {
+    background: none !important;
+    height: 32px;
+}
+
+/* note link border at hover */
+.notion-page-content div.notion-selectable a > div:hover {
+    border-bottom: 2px dotted #F0F0F0;
+}
+
+/* remove default note link undeline */
+.notion-page-content div.notion-selectable a > div span {
+    border-bottom: 0px !important;
+}
+
+/* display note controls (over note name) */
+.notion-page-controls {
+    opacity: 1 !important;
+}
+
+/* note controls fix size */
+.notion-page-controls > div > div > div {
+    height: 38px !important;
+}
+
+/* BREADCRUMBS */
+.notion-topbar > div > div:nth-child(n+1) > div, 
+.notion-topbar > div > div:nth-child(n+1) > div > a > div {
+    padding: 0px 16px 0px 14px !important;
+    height: 38px !important;
+}
